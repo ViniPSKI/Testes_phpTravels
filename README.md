@@ -3,7 +3,7 @@
 Para executar o script com sucesso, certifique-se de ter as seguintes ferramentas instaladas no seu computador:
 
     Python versão >= 3.8.10
-        Instruções de Instalação do Python
+        Instruções de Instalação do Python: https://www.python.org/downloads/release/python-3810/
 
     Robot Framework versão >= 6.0.2
         Instale com o seguinte comando: pip install --upgrade robotframework==6.0.2
@@ -12,7 +12,7 @@ Para executar o script com sucesso, certifique-se de ter as seguintes ferramenta
         Instale com o seguinte comando: pip install --upgrade selenium==4.8.3
 
     GeckoDriver (Driver para utilizar o Firefox) versão >= 0.33.0
-        Instruções de Instalação do GeckoDriver
+        Instruções de Instalação do GeckoDriver: https://github.com/mozilla/geckodriver/releases
 
 Os arquivos que você clonou do repositório Git devem estar dentro de uma pasta raiz, como por exemplo: Testes_Com_Selenium
 
