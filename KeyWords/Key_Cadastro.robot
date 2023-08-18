@@ -41,8 +41,8 @@ E realizar o calculo da soma e preencher no campo Result
 E clicar no botão Submit
     Click Button    ${BT_SUBMIT}
 
-Então o sistema deve apresentar a tela com a mensagem “Thank you!”
-    Wait Until Page Contains    Thank you!
+Então o sistema deve apresentar a tela com a mensagem “${Valição_Sucesso}”
+    Wait Until Page Contains    ${Valição_Sucesso}
 
 Então o sistema deve apresentar a tela com a mensagem de obrigatoriedade do campo não preenchido
     Alert Should Be Present    Please type your email name

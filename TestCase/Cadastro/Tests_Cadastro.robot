@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../KeyWords/Key_Cadastro.robot
+Resource    ../../KeyWords/Key_Cadastro.robot
 
 Suite Teardown    Close All Browsers
 *** Test Cases ***
