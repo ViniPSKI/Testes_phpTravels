@@ -18,23 +18,26 @@ ${BT_SUBMIT}             //button[@id="demo"]
 ${H2_CAD_COMPLETED}      //div[@class="completed"][contains(.,'Thank you!')]
 
 *** Keywords ***
-Abrir navegador
+Abrir o navegador
     Open Browser    about:blank    ${Browser}
+
+Fechar o navegador
+    Close Browser
 
 Dado que o usuário esteja no site "${URL}"
     Go To    ${URL}
     Maximize Browser Window
 
 Quando preencher todos os dados com dados válidos
-    Input Text    ${INP_FIRST_NAME}    Teste
-    Input Text    ${INP_LAST_NAME}    LastTest
-    Input Text    ${INP_BUSSINES_NAME}    BussinesTest
+    Input Text    ${INP_FIRST_NAME}    Name Teste
+    Input Text    ${INP_LAST_NAME}    Last Name Teste
+    Input Text    ${INP_BUSSINES_NAME}    Bussines Name Teste
     Input Text    ${INP_EMAIL}    EmailTest@gmail.com  
 
 Quando preencher todos os dados com dados válidos menos o e-mail
-    Input Text    ${INP_FIRST_NAME}    Teste
-    Input Text    ${INP_LAST_NAME}    LastTest
-    Input Text    ${INP_BUSSINES_NAME}    BussinesTest
+    Input Text    ${INP_FIRST_NAME}    Name Teste
+    Input Text    ${INP_LAST_NAME}    Last Name Teste
+    Input Text    ${INP_BUSSINES_NAME}    Bussines Name Teste
 
     E realizar o calculo da soma e preencher no campo Result
 
@@ -53,4 +56,4 @@ Então o sistema deve apresentar a tela com a mensagem “${Valição_Sucesso}�
     Wait Until Page Contains    ${Valição_Sucesso}
 
 Então o sistema deve apresentar a tela com a mensagem de obrigatoriedade do campo não preenchido
-    Alert Should Be Present    Please type your email name
+    Alert Should Be Present    Please type your email name    action=ACCEPT

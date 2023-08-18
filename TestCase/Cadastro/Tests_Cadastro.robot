@@ -1,9 +1,10 @@
 *** Settings ***
+Documentation    Testes de Cadastro
 Library    SeleniumLibrary
 Resource    ../../KeyWords/Key_Cadastro.robot
 
-Test Setup    Abrir navegador
-Test Teardown    Close Browser
+Test Setup    Abrir o navegador
+Test Teardown    Fechar o navegador
 
 *** Test Cases ***
 Caso de Teste 1 – criar um novo cadastro com sucesso 
