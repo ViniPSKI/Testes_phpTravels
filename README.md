@@ -22,6 +22,6 @@ Após isso, para executar os testes, siga estas etapas:
 
     Execute o seguinte comando para iniciar a execução dos testes:
 
-robot -d results ./TestCase/Tests_Cadastro.robot
+# robot -d result ./TestCase/Cadastro/Tests_Cadastro.robot
 
 Será criada uma pasta chamada "results" contendo um arquivo HTML detalhando a execução dos testes.
