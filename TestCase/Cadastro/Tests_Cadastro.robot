@@ -2,7 +2,9 @@
 Library    SeleniumLibrary
 Resource    ../../KeyWords/Key_Cadastro.robot
 
-Suite Teardown    Close All Browsers
+Test Setup    Abrir navegador
+Test Teardown    Close Browser
+
 *** Test Cases ***
 Caso de Teste 1 – criar um novo cadastro com sucesso 
     Dado que o usuário esteja no site "https://phptravels.com/demo/"
