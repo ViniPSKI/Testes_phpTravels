@@ -15,8 +15,6 @@ ${SPAN_NUMBER2}          //span[@id="numb2"]
 
 ${BT_SUBMIT}             //button[@id="demo"]
 
-${H2_CAD_COMPLETED}      //div[@class="completed"][contains(.,'Thank you!')]
-
 *** Keywords ***
 Abrir o navegador
     Open Browser    about:blank    ${Browser}
